@@ -1,5 +1,8 @@
 # 🚀 Dashnix
 
+> [!NOTE]
+> This project is a part of [SnapCore](https://github.com/SnapSettle/snapcore)!
+
 **Dashnix** is a lightweight, NixOS-native service dashboard. It automatically scans your system configuration to discover enabled services and their assigned ports, presenting them in a clean, modern web interface.
 
 No more manual bookmarking or hardcoding links—if it's enabled in your NixOS config, Dashnix finds it.
@@ -68,7 +71,7 @@ You can import the module directly from GitHub using `fetchTarball` in your `con
 {
   imports = [
     (builtins.fetchTarball {
-      url = "https://github.com/your-username/dashnix/archive/main.tar.gz";
+      url = "https://github.com/your-username/dashnix/archive/master.tar.gz";
     } + "/dashnix.nix")
   ];
 }

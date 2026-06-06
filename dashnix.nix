@@ -609,14 +609,17 @@ in
 {
   options.services.dashnix = {
     enable = mkEnableOption "Dashnix dashboard";
+
     port = mkOption {
       type = types.port;
       default = 8081;
     };
+
     openFirewall = mkOption {
       type = types.bool;
       default = false;
     };
+
     watchedServices = mkOption {
       type = types.listOf types.str;
       default = [
